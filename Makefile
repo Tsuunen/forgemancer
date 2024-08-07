@@ -2,7 +2,7 @@ NAME = forgemancer
 CC = gcc
 CFLAGS = `pkg-config --cflags gtk4`
 LIBS = `pkg-config --libs gtk4` -lmysqlclient   
-SRC = main.c\
+SRC = src/main.c\
 	  src/database_handler/database_handler.c\
 	  src/utils/dotenv_load.c
 OBJ = $(SRC:.c=.o)
