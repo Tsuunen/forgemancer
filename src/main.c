@@ -1,17 +1,16 @@
-#include <gtk/gtk.h>
-#include "includes/utils.h"
+// #include <gtk/gtk.h>
+#include "../includes/utils.h"
+#include "../includes/database_handler.h"
 
-int	get_user(char *uuid);
-
-static void	activate(GtkApplication *app, gpointer data)
-{
-	GtkWidget	*window;
-
-	window = gtk_application_window_new(app);
-	gtk_window_set_title(GTK_WINDOW(window), "Forgemancer");
-	gtk_window_set_default_size(GTK_WINDOW(window), 1280, 720);
-	gtk_window_present(GTK_WINDOW(window));
-}
+// static void	activate(GtkApplication *app, gpointer data)
+// {
+// 	GtkWidget	*window;
+//
+// 	window = gtk_application_window_new(app);
+// 	gtk_window_set_title(GTK_WINDOW(window), "Forgemancer");
+// 	gtk_window_set_default_size(GTK_WINDOW(window), 1280, 720);
+// 	gtk_window_present(GTK_WINDOW(window));
+// }
 
 int	main(int ac, char **av)
 {
@@ -25,7 +24,5 @@ int	main(int ac, char **av)
 	// g_object_unref(app);
 	//
 	// return (status);
-	
-	get_user("test");
 	return (0);
 }
