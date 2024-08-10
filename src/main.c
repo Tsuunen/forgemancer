@@ -24,5 +24,14 @@ int	main(int ac, char **av)
 	// g_object_unref(app);
 	//
 	// return (status);
+	
+	char	**uuids = get_all_uuids();
+	int		i = 0;
+	while (uuids[i] != NULL)
+	{
+		printf("%s\n", uuids[i]);
+		i++;
+	}
+	free(uuids);
 	return (0);
 }

@@ -6,6 +6,7 @@ SRC = src/main.c\
 	  src/database_handler/database_utils.c\
 	  src/database_handler/get_user.c\
 	  src/database_handler/add_user.c\
+	  src/database_handler/get_all_uuids.c\
 	  src/utils/dotenv_load.c
 OBJ = $(SRC:.c=.o)
 
