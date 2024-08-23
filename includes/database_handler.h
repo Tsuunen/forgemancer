@@ -18,6 +18,6 @@ typedef struct s_user
 MYSQL	*init_conn(void);
 User	get_user(char *username);
 int		add_user(User user);
-char	**get_all_uuids(void);
+char	*generate_uuid(void);
 
 #endif

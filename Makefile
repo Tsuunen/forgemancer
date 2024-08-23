@@ -1,12 +1,12 @@
 NAME = forgemancer
 CC = gcc
 CFLAGS = `pkg-config --cflags gtk4` -Iincludes -g3
-LIBS = `pkg-config --libs gtk4` -lmysqlclient   
+LIBS = `pkg-config --libs gtk4` -lmysqlclient -luuid
 SRC = src/main.c\
 	  src/database_handler/database_utils.c\
 	  src/database_handler/get_user.c\
 	  src/database_handler/add_user.c\
-	  src/database_handler/get_all_uuids.c\
+	  src/database_handler/generate_uuid.c\
 	  src/utils/dotenv_load.c
 OBJ = $(SRC:.c=.o)
 
